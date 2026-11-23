@@ -7,7 +7,7 @@ window.PORTFOLIO_PROJECTS = [
     subtitle: "Флагманский сайт мебельного ателье с онлайн-калькулятором замера",
     description:
       "Каталог реализованных кухонь и гардеробных со спецификацией материалов, интерактивные вкладки отделки (Fenix, шпон, Blum) и 3-шаговый расчёт вилки бюджета.",
-    tags: ["HTML / CSS / JS", "Квиз-калькулятор", "Тёмная тема"],
+    tags: ["React / TypeScript", "Framer Motion", "Квиз-калькулятор"],
     accent: "linear-gradient(135deg, #2b231b 0%, #9b6b3f 100%)",
     previewImg: "./previews/forma-mebel.png",
     liveUrl: "./demos/forma-mebel/",
