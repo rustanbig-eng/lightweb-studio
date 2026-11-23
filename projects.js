@@ -1,5 +1,19 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    id: "forma-mebel",
+    category: "mebel",
+    categoryLabel: "Мебель / Квиз",
+    title: "FORMA — Кухни и мебель на заказ",
+    subtitle: "Флагманский сайт мебельного ателье с онлайн-калькулятором замера",
+    description:
+      "Каталог реализованных кухонь и гардеробных со спецификацией материалов, интерактивные вкладки отделки (Fenix, шпон, Blum) и 3-шаговый расчёт вилки бюджета.",
+    tags: ["HTML / CSS / JS", "Квиз-калькулятор", "Тёмная тема"],
+    accent: "linear-gradient(135deg, #2b231b 0%, #9b6b3f 100%)",
+    previewImg: "./previews/forma-mebel.png",
+    liveUrl: "./demos/forma-mebel/",
+    result: "Готовый концепт под замер и рекламу — адаптируется под любой мебельный бренд",
+  },
+  {
     id: "aurelia-salon",
     category: "beauty",
     categoryLabel: "Красота и сервис",

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f5f2ec" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)" />
+  <title>FORMA — Архитектура кухонь и корпусной мебели на заказ</title>
+  <meta name="description" content="Проектирование и собственное производство кухонь, шкафов и гардеробных на заказ. Точность до 1 мм, фурнитура Blum, фиксация стоимости в договоре и онлайн-расчёт за 1 минуту." />
+  <meta property="og:title" content="FORMA — Кухни и корпусная мебель на заказ" />
+  <meta property="og:description" content="Реализованные проекты с размерами, подбор материалов и быстрый расчёт стоимости под ваши габариты." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://rustanbig-eng.github.io/lightweb-studio/demos/forma-mebel/images/hero-kitchen.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css?v=2" />
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114509387', 'ym');
+      ym(114509387, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/114509387" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="#top" class="brand" id="brandLogo">
+        <span class="brand__mark" aria-hidden="true">F</span>
+        <span class="brand__text">
+          <strong data-cfg="brandName">FORMA</strong>
+          <small data-cfg="brandCity">Ателье кухонь · Москва и МО</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Разделы сайта">
+        <a href="#projects">Проекты</a>
+        <a href="#materials">Материалы</a>
+        <a href="#calculator">Расчёт цены</a>
+        <a href="#process">Этапы</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <a href="#calculator" class="btn btn--primary btn--sm">Рассчитать проект</a>
+        <button type="button" class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__layout">
+        <div class="hero__copy">
+          <div class="eyebrow-row">
+            <span class="mono-tag">Собственное производство · Срок от 25 дней</span>
+          </div>
+
+          <h1 class="hero__title">
+            Кухни и мебель,<br />
+            <em>встроенные в архитектуру</em><br />
+            вашего дома
+          </h1>
+
+          <p class="hero__lead">
+            Проектируем и собираем по миллиметрам под планировку квартиры: скрытые ручки-профили, влагостойкая кромка PUR, фурнитура Blum и твёрдая фиксация сметы в договоре до запуска в цех.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#calculator" class="btn btn--primary">Рассчитать стоимость за 1 мин</a>
+            <a href="#projects" class="btn btn--outline">Смотреть проекты</a>
+          </div>
+
+          <dl class="hero__stats">
+            <div>
+              <dt>0 ₽ доплат</dt>
+              <dd>смета и сроки жёстко в договоре</dd>
+            </div>
+            <div>
+              <dt>1 мм</dt>
+              <dd>точность лазерного замера стен</dd>
+            </div>
+            <div>
+              <dt>5 лет</dt>
+              <dd>гарантия на корпус, фасады и монтаж</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero__media">
+          <img src="./images/hero-kitchen.jpg" alt="Архитектурная кухня в шпоне дуба и камне травертин" />
+          <figcaption class="hero__caption">
+            <span>Проект 01 · Островная кухня</span>
+            <span>Шпон дуба + кварц · 4 200 мм</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <span class="section__kicker">01 / Портфолио цеха</span>
+            <h2>Реализованные проекты с точными параметрами</h2>
+            <p>Нажмите на любой проект, чтобы открыть спецификацию материалов, габариты и срок изготовления.</p>
+          </div>
+          <div class="filter-tabs" id="projectTabs" role="group" aria-label="Категории мебели">
+            <button type="button" class="tab is-active" data-cat="all">Все работы</button>
+            <button type="button" class="tab" data-cat="kitchen">Кухни</button>
+            <button type="button" class="tab" data-cat="wardrobe">Шкафы и гардеробные</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="materials">
+      <div class="container materials__layout">
+        <div class="materials__media">
+          <img src="./images/materials-craft.jpg" alt="Образцы материалов: шпон дуба, Fenix NTM, кварц и профиль" />
+        </div>
+
+        <div class="materials__content">
+          <span class="section__kicker">02 / Материалы и сборка</span>
+          <h2>То, что остаётся идеальным через 7 лет ежедневного быта</h2>
+          <p class="materials__intro">
+            Привозим живые образцы на замер, чтобы вы выбрали оттенок прямо при освещении вашей комнаты, а не по экрану телефона.
+          </p>
+
+          <div class="mat-tabs" id="matTabs" role="tablist">
+            <button type="button" class="mat-tab is-active" data-mat="facades" role="tab">Фасады</button>
+            <button type="button" class="mat-tab" data-mat="countertops" role="tab">Столешницы</button>
+            <button type="button" class="mat-tab" data-mat="hardware" role="tab">Фурнитура</button>
+          </div>
+
+          <div class="mat-panel" id="matPanel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="calculator">
+      <div class="container calc-grid">
+        <div class="calc-copy">
+          <span class="section__kicker">03 / Онлайн-ориентир</span>
+          <h2>Узнайте вилку бюджета по вашим габаритам за 30 секунд</h2>
+          <p>
+            Без звонков «оставьте номер, потом скажем цену». Выберите конфигурацию и уровень отделки — сразу покажем честный диапазон стоимости и сроки производства.
+          </p>
+
+          <ul class="calc-promises">
+            <li>Бесплатный выезд технолога с чемоданом образцов и лазерным уровнем</li>
+            <li>3D-визуализация и схема электрики/розеток под технику до предоплаты</li>
+            <li>Подготовка точного расчёта в нескольких вариантах комплектации</li>
+          </ul>
+        </div>
+
+        <form class="quiz-card" id="quizForm">
+          <div class="quiz-group">
+            <span class="quiz-label">1. Формат мебели</span>
+            <div class="quiz-options" id="quizType">
+              <button type="button" class="q-opt is-active" data-val="Прямая кухня" data-base="52000">Прямая кухня</button>
+              <button type="button" class="q-opt" data-val="Угловая кухня" data-base="58000">Угловая кухня</button>
+              <button type="button" class="q-opt" data-val="Кухня с островом" data-base="68000">С островом / П</button>
+              <button type="button" class="q-opt" data-val="Шкаф / Гардеробная" data-base="44000">Шкаф / Гардероб</button>
+            </div>
+          </div>
+
+          <div class="quiz-group">
+            <div class="quiz-label-row">
+              <span class="quiz-label">2. Примерная длина</span>
+              <strong class="mono-val" id="quizLengthVal">3.6 м</strong>
+            </div>
+            <input type="range" id="quizLength" min="1.8" max="7.5" step="0.2" value="3.6" />
+          </div>
+
+          <div class="quiz-group">
+            <span class="quiz-label">3. Класс фасадов и фурнитуры</span>
+            <div class="quiz-options quiz-options--col" id="quizTier">
+              <button type="button" class="q-opt is-active" data-val="EGGER + Hettich (Практичный)" data-mult="1">
+                <span>ЛДСП EGGER / пластик + Hettich</span>
+                <small>оптимально по цене</small>
+              </button>
+              <button type="button" class="q-opt" data-val="AGT / Fenix NTM + Blum" data-mult="1.28">
+                <span>Матовый Fenix / AGT + доводчики Blum</span>
+                <small>бархатный мат без отпечатков</small>
+              </button>
+              <button type="button" class="q-opt" data-val="Шпон / Эмаль + Кварц + Blum Legrabox" data-mult="1.58">
+                <span>Натуральный шпон / Эмаль + Кварц + Legrabox</span>
+                <small>премиальная комплектация</small>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-result">
+            <div>
+              <span class="quiz-result__label">Ориентировочная стоимость под ключ</span>
+              <strong class="quiz-result__price" id="quizPrice">187 000 – 219 000 ₽</strong>
+            </div>
+            <span class="quiz-result__time" id="quizTerm">Срок: 25–30 дней</span>
+          </div>
+
+          <div class="quiz-submit-row">
+            <input type="text" id="quizPhone" placeholder="Ваш телефон или мессенджер для 3D-проекта" required />
+            <button type="submit" class="btn btn--primary btn--full">Закрепить расчёт и записаться на замер</button>
+          </div>
+          <div class="quiz-feedback" id="quizFeedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="process">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__kicker">04 / Порядок работы</span>
+          <h2>От замера до чистого монтажа без нервов</h2>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step">
+            <span class="step__num">01</span>
+            <h3>Лазерный замер и 3D-макет</h3>
+            <p>Замеряем все углы, коммуникации и выводы вентиляции, подбираем живые образцы под ваш свет.</p>
+          </article>
+          <article class="step">
+            <span class="step__num">02</span>
+            <h3>Твёрдая смета в договоре</h3>
+            <p>Фиксируем итоговую цену, материалы, фурнитуру Blum/Hettich и дату монтажа без скрытых доплат.</p>
+          </article>
+          <article class="step">
+            <span class="step__num">03</span>
+            <h3>Распил и контроль в цеху</h3>
+            <p>Кромим влагостойким PUR-клеем, сверлим присадки на ЧПУ и предварительно проверяем узлы до отгрузки.</p>
+          </article>
+          <article class="step">
+            <span class="step__num">04</span>
+            <h3>Монтаж за 1–2 дня и уборка</h3>
+            <p>Бережно ставим корпус, вырезаем мойку/варку, регулируем зазоры до 2 мм и убираем весь мусор.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__kicker">05 / Отзывы клиентов</span>
+          <h2>Что говорят после установки</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-card__top">
+              <strong>Анна и Дмитрий, ЖК «Резиденция»</strong>
+              <span>Кухня 4.2 м · Fenix NTM</span>
+            </div>
+            <p>
+              «Боялись, что на угловой кухне вылезет зазор из-за неровных стен от застройщика, но ребята сделали фальш-планку идеально в ноль. Смета за время сборки не выросла ни на рубль, смонтировали за один день.»
+            </p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__top">
+              <strong>Ирина, частный дом</strong>
+              <span>Гардеробная 3.8 м + прихожая</span>
+            </div>
+            <p>
+              «Очень выручило, что технолог приехал с образцами шпона и стекла: на телефоне оттенки совсем другие. Подсветка в шкафах включается плавно от датчика открытия — выглядит как в журнале.»
+            </p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__top">
+              <strong>Сергей К., вторичка</strong>
+              <span>П-образная кухня · 28 дней</span>
+            </div>
+            <p>
+              «Сразу дали схему, где проложить розетки под посудомойку и духовку до укладки плитки. Ничего не пришлось переделывать, все ящики Blum ходят тихо и плотно.»
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--walnut" id="contacts">
+      <div class="container contact-grid">
+        <div>
+          <span class="section__kicker section__kicker--light">06 / Контакты</span>
+          <h2>Обсудить вашу планировку или прислать эскиз</h2>
+          <p class="contact-lead">
+            Пришлите фото помещения или набросок от руки — посчитаем 2–3 варианта под ваш бюджет и привезём образцы на замер.
+          </p>
+          <div class="contact-list">
+            <div class="contact-item">
+              <span>Телефон</span>
+              <strong data-cfg="phoneDisplay">+7 (999) 000-00-00</strong>
+            </div>
+            <div class="contact-item">
+              <span>Адрес шоурума / цеха</span>
+              <strong data-cfg="address">г. Москва (выезд на замер бесплатно)</strong>
+            </div>
+            <div class="contact-item">
+              <span>График замеров</span>
+              <strong>Ежедневно 09:00 – 21:00</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-card" id="contactForm">
+          <h3>Вызвать замерщика с образцами</h3>
+          <label class="field">
+            <span>Как к вам обращаться</span>
+            <input type="text" id="cName" placeholder="Например, Ольга" required />
+          </label>
+          <label class="field">
+            <span>Телефон или WhatsApp / MAX</span>
+            <input type="tel" id="cPhone" placeholder="+7 (___) ___-__-__" required />
+          </label>
+          <label class="field">
+            <span>Комментарий (квартира, сроки, пожелания)</span>
+            <textarea id="cNote" rows="3" placeholder="Например: кухня 3.5 м, ремонт заканчиваем через месяц"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Записаться на бесплатный замер</button>
+          <div class="quiz-feedback" id="contactFeedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 <span data-cfg="brandName">FORMA</span> — Кухни и корпусная мебель на заказ</span>
+      <span>Демо-проект студии <a href="https://rustanbig-eng.github.io/lightweb-studio/" target="_blank" rel="noopener">LightWeb Studio</a></span>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal" id="projectModal" hidden aria-modal="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__box">
+      <button type="button" class="modal__close" id="modalClose" aria-label="Закрыть">✕</button>
+      <img class="modal__img" id="modalImg" src="" alt="" />
+      <div class="modal__body">
+        <span class="section__kicker" id="modalCat"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <dl class="modal__specs" id="modalSpecs"></dl>
+        <a href="#calculator" class="btn btn--primary btn--full" id="modalCta">Рассчитать похожий проект</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
